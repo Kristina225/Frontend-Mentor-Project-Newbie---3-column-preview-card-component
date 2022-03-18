@@ -20,7 +20,6 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   height: 100vh;
-  overflow: hidden;
   padding: 0 2.4rem 0 2.4rem;
   color: var(--very-light-gray);
   background-color: var(--very-light-gray);
@@ -118,9 +117,26 @@ img {
   background-color: var(--very-dark-cyan);
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 850px) {
+  body {
+    overflow: visible;
+  }
+
   .vehicles {
     flex-direction: column;
+    margin: 8.8rem auto 8.8rem auto;
     max-width: 32.7rem;
+  }
+
+  .sedans {
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+
+  .vehicle__btn {
+    margin: 2.5rem 0 0 0.05rem;
   }
 }

@@ -42,7 +42,6 @@ img {
   max-width: 92rem;
   display: flex;
   border-radius: 0.8rem;
-  background-color: var(--birght-orange);
 }
 
 .vehicle {
@@ -59,7 +58,6 @@ img {
 
 .suvs {
   background-color: var(--dark-cyan);
-  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
 .luxury {

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* TODO: change padding and margins to containe and refactor  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --birght-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--very-light-gray);
+  padding: 0 2.4rem 0 2.4rem;
+}
+
+img {
+  width: 6.4rem;
+  margin-left: 0.05rem;
+}
+
+.vehicles {
+  width: 100%;
+  max-width: 92rem;
+  display: flex;
+  border-radius: 0.8rem;
+  background-color: var(--birght-orange);
+}
+
+.vehicle {
+  padding: 4.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sedans {
+  background-color: var(--birght-orange);
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
+}
+
+.vehicle__type {
+  margin-top: 3.5rem;
+  margin-left: 0.05rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.vehicle__description {
+  margin-top: 2.5rem;
+  color: var(--transparent-white);
+  line-height: 2.5rem;
+  hyphens: none;
+}
+
+.vehicle__btn {
+  margin-top: 8.3rem;
+  margin-left: 0.05rem;
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 0.9rem 2.95rem 1rem 2.95rem;
+  border-radius: 2.5rem;
+  line-height: 2.5rem;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.sedans .vehicle__btn {
+  color: var(--birght-orange);
+}
+
+.suvs .vehicle__btn {
+  color: var(--dark-cyan);
+}
+
+.luxury .vehicle__btn {
+  color: var(--very-dark-cyan);
+  padding: 0.9rem 3.05rem 1rem 2.85rem;
+}
+
+.sedans .vehicle__btn:hover,
+.suvs .vehicle__btn:hover,
+.luxury .vehicle__btn:hover {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.sedans .vehicle__btn:hover {
+  background-color: var(--birght-orange);
+}
+
+.suvs .vehicle__btn:hover {
+  background-color: var(--dark-cyan);
+}
+
+.luxury .vehicle__btn:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+@media only screen and (max-width: 420px) {
+  .vehicles {
+    flex-direction: column;
+    max-width: 32.7rem;
+  }
+}

@@ -22,6 +22,7 @@ body {
   font-weight: 400;
   height: 100vh;
   overflow: hidden;
+  background-color: var(--very-light-gray);
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -71,7 +72,9 @@ img {
   margin-left: 0.05rem;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
+  text-transform: uppercase;
   font-size: 4rem;
+  color: var(--very-light-gray);
 }
 
 .vehicle__description {
@@ -85,11 +88,11 @@ img {
   margin-top: 8.3rem;
   margin-left: 0.05rem;
   text-decoration: none;
-  background-color: aliceblue;
+  background-color: var(--very-light-gray);
   padding: 0.9rem 2.95rem 1rem 2.95rem;
   border-radius: 2.5rem;
   line-height: 2.5rem;
-  border: 2px solid hsl(0, 0%, 100%);
+  border: 2px solid var(--very-light-gray);
 }
 
 .sedans .vehicle__btn {

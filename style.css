@@ -21,9 +21,10 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   height: 100vh;
-  display: flex;
+  overflow: hidden;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-size: 1.5rem;
   color: var(--very-light-gray);
   padding: 0 2.4rem 0 2.4rem;
@@ -35,6 +36,7 @@ img {
 }
 
 .vehicles {
+  margin: 17.1rem auto 0 auto;
   width: 100%;
   max-width: 92rem;
   display: flex;
